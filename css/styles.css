@@ -4,7 +4,7 @@ h1 {font-size: 200%;padding: 0;margin: 0;}
 
 img {max-width: 100%;height: auto;}
 
-#container {width: 960px; padding: 5px;margin: 0 auto;background: #FFFFFF; border-radius: 10px;position: relative;}
+#container {width: 90%; padding: 5px;margin: 0 auto;background: #FFFFFF; border-radius: 10px;position: relative;}
 	#header {height: 90px;}
 	#content {}
 	#footer {height: 30px;font-size: 80%;width: 100%;text-align: center;line-height: 30px;border-top: 1px dotted #333;}
