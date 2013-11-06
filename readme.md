@@ -12,14 +12,22 @@ Pixity is a tool developed to ease the pain of creating a mobile site with respo
 +   Set the src property to a placeholder (I use a 1x1 pixel for bandwidth)
 
 ###Usage
-Set up your HTML element:
+Include jQuery (tested with 1.7+) as well as the pixity jQuery plugin:
+```html
+<!-- be responsible when including these, before the closing body element is great -->
+<script src="javascript/jquery-1.7.min.js"></script>
+<script src="javascript/pixity.min.js"></script>
+```
+Now set up your img element with some data-attributes:
 ```html
 <img class="pixity" src="images/placeholder.gif" alt="Pixity test" data-path="images/" data-sm="small.png" data-md="medium.png" data-lg="large.png" />
 ```
 
 Call pixity in your .ready(), or from a deferred function:
 ```javascript
-$.pixity();
+$(document).ready(function() {
+    $.pixity();
+});
 ```
 ###Options
 The following options (with listed defaults) can be changed to fit your needs.
@@ -32,6 +40,9 @@ To change options, you pass them in the call to pixity in JSON format:
 ```javascript
 $.pixity({limitSm:700,limitMd:959});
 ```
+###Todo
++ It would be cool to add a ratio calculation to use the padding trick to placehold where the image will load
++ lazy-loading of images on the page would be a nice addition
 
 ####Version
 Current Version:
