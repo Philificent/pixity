@@ -1,6 +1,7 @@
 Pixity Core
 ======
-![Pixity Logo](https://github.com/dutsonpa/pixity/blob/master/images/logo.png "Pixity - responsive image replacement utility")
+![Pixity Logo](https://github.com/dutsonpa/pixity/blob/master/images/logo.png?raw=true "Pixity - responsive image replacement utility")
+
 Pixity is a tool developed to ease the pain of creating a mobile site with responsive/art-directed imagery. Pixity is currently available as a jQuery plugin. There are several iterations of Pixity in development (Pixity Slider, Pixity 2x, etc), but this is the original core project. Using pixity is a fairly simple and straight-forward process that is built on some emerging HTML5 spec for handling multiple images within the same element.
 +   Add a class of "pixity" to your images
 +   Add a data-attribute of data-img with the path to your image
