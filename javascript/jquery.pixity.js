@@ -12,7 +12,8 @@ https://github.com/dutsonpa/pixity
 			{
 				imgClass: 'pixity',
 				limitSm: 479,
-				limitMd: 767
+				limitMd: 767,
+                limitLg: 959
 			},
 			options
 		);
@@ -37,13 +38,21 @@ https://github.com/dutsonpa/pixity
 				$this.attr('src',$this.data('path') +'/'+$this.data('lg'));
 			});
 		};
+        var imgXl = function() {
+			domNode.each(function() {
+				var $this = $(this);
+				$this.attr('src',$this.data('path') +'/'+$this.data('xl'));
+			});
+		};
 
 		if (cw <= settings.limitSm) {
 			imgSm(domNode);
 		} else if (cw <= settings.limitMd) {
 			imgMd(domNode);
-		} else {
+		} else if (cw <= settings.limitLg) {
 			imgLg(domNode);
+		} else {
+			imgXl(domNode);
 		}
 	}
 })(jQuery);
